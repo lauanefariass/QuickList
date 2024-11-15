@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 18px;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(30px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.todo-title {
+  font-size: 2.5rem;
+  color: #7f4b8b;
+  text-align: center;
+  margin-bottom: 45px;
+  animation: fall 1.2s ease-in-out forwards;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.todo-input-container {
+  display: flex;
+  gap: 10px;
+  width: 110%;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 16px;
+  font-size: 1.2rem;
+  border: 1px solid #b0b0b0;
+  border-radius: 30px;
+  background-color: #f9f9f9;
+  color: #333333;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.todo-button {
+  padding: 16px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #7f4b8b;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 150px;
+}
+
+.todo-button:hover {
+  background-color: #9c67a1;
+  transform: translateY(-2px);
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #323232;
+}
+
+.todo-item:hover {
+  background-color: #dbdada;
+}
+
+.todo-delete {
+  background-color: transparent;
+  color: #7f4b8b;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.todo-delete:hover {
+  color: #9c67a1;
+  text-decoration: underline;
+}
+
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #7f4b8b;
+}
+
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filter-container button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #7f4b8b;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-container button:hover {
+  background-color: #9c67a1;
+}
+
+
+.task-count {
+  text-align: center;
+  font-size: 1rem;
+  color: #7f4b8b;
+  margin-top: 20px;
+}
