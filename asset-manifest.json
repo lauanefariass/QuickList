@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lauanefariass/QuickList.git/static/css/main.381f2adb.css",
+    "main.js": "/lauanefariass/QuickList.git/static/js/main.0913fff0.js",
+    "index.html": "/lauanefariass/QuickList.git/index.html",
+    "main.381f2adb.css.map": "/lauanefariass/QuickList.git/static/css/main.381f2adb.css.map",
+    "main.0913fff0.js.map": "/lauanefariass/QuickList.git/static/js/main.0913fff0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.381f2adb.css",
+    "static/js/main.0913fff0.js"
+  ]
+}
